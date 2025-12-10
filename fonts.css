@@ -62,3 +62,13 @@ div {
   font-feature-settings: "ss01" 0, "ss02" 0, "ss03" 0; /* Disable common stylistic sets */
   font-variant-alternates: normal;
 }
+
+::selection {
+  background: #229799;
+  color: #dfdfdf;
+}
+
+::-moz-selection {
+  background: #229799;
+  color: #dfdfdf;
+}
