@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
-description: "Meet the next generation of documentation. AI-native, beautiful out-of-the-box, and built for developers."
-mode: "frame"
+description: "A markdown engine that’s straight-up reliable. It does the job fast and the way you expect."
+mode: "custom"
 keywords: ["overview", "platform", "getting started", "features"]
 ---
 
@@ -9,12 +9,12 @@ export const HeroCard = ({ filename, title, description, href }) => {
   return (
     <a className="group cursor-pointer pb-8" href={href}>
       <img
-        src={`https://mintlify.s3.us-west-1.amazonaws.com/mintlify/images/hero/${filename}.png`}
-        className="block dark:hidden pointer-events-none group-hover:scale-105 transition-all duration-100"
+        src={`/images/hero/${filename}-light.svg`}
+        className="block dark:hidden pointer-events-none group-hover:scale-105 transition-all duration-300"
       />
       <img
-        src={`https://mintlify.s3.us-west-1.amazonaws.com/mintlify/images/hero/${filename}-dark.png`}
-        className="pointer-events-none group-hover:scale-105 transition-all duration-100 hidden dark:block"
+        src={`/images/hero/${filename}-dark.svg`}
+        className="pointer-events-none group-hover:scale-105 transition-all duration-300 hidden dark:block"
       />
       <h3 className="mt-5 text-gray-900 dark:text-zinc-50 font-medium">
         {title}
@@ -47,30 +47,31 @@ export const HeroCard = ({ filename, title, description, href }) => {
       A markdown engine that’s straight-up reliable. It does the job fast and the way you expect.
     </div>
 
-    {/* <div className="px-6 lg:px-0 mt-12 lg:mt-24 grid sm:grid-cols-2 gap-x-6 gap-y-4">
-      <HeroCard filename="rocket" title="Quickstart" description="Deploy your first docs site in minutes with our step-by-step guide" href="/quickstart" />
+    <div className="px-6 lg:px-0 mt-12 lg:mt-24 grid sm:grid-cols-2 gap-x-6 gap-y-4">
 
       <HeroCard
         filename="cli"
-        title="CLI installation"
-        description="Install the CLI to preview and develop your docs locally"
+        title="CLI"
+        description="Install the CLI to preview and use Aethermark locally."
         href="/installation"
       />
 
+      <HeroCard filename="internals" title="Internals" description="Take a look at how Aethermark works & it's formal definitions." href="/state_machines" />
+
       <HeroCard
-        filename="editor"
+        filename="web"
         title="Web editor"
-        description="Make quick updates and manage content with our browser-based editor"
+        description="Experiment with Aethermrk in the web."
         href="/editor"
       />
 
       <HeroCard
-        filename="components"
-        title="Components"
-        description="Build rich, interactive documentation with our ready-to-use components"
-        href="/components/accordions"
+        filename="installation"
+        title="Installation"
+        description="Installtion guide."
+        href="/installation"
       />
-    </div> */}
+    </div>
 
   </div>
 </div>
