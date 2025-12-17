@@ -2,6 +2,10 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Aethermark",
+  "banner": {
+    "content": "🚀 Check out python package at [PyPI](https://pypi.org/project/aethermark/) !",
+    "dismissible": true
+  },
   "colors": {
     "primary": "#229799",
     "light": "#229799",
